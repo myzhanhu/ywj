@@ -1,0 +1,61 @@
+.pic-box .content .register .account-txt {
+  width: 100%;
+}
+.pic-box .content .register .account-txt .div {
+  width: 80%;
+  margin-left: 19%;
+}
+.pic-box .content .register .account-txt .text11 {
+  display: block;
+  width: 298px;
+  height: 32px;
+  line-height: 24px;
+  padding-left: 5px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  font-size: 14px;
+  font-family: arial, "宋体";
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.pic-box .content .register .account-txt .text22 {
+  display: block;
+  width: 298px;
+  height: 32px;
+  line-height: 24px;
+  padding-left: 5px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  font-size: 14px;
+  font-family: arial, "宋体";
+  margin-bottom: 10px;
+}
+.pic-box .content .register .account-txt .text3 {
+  display: block;
+  width: 298px;
+  height: 32px;
+  line-height: 24px;
+  padding-left: 5px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  font-size: 14px;
+  font-family: arial, "宋体";
+  margin-bottom: 10px;
+}
+.pic-box .content .register .account-txt .text4 {
+  display: block;
+  width: 298px;
+  height: 32px;
+  line-height: 24px;
+  padding-left: 5px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  font-size: 14px;
+  font-family: arial, "宋体";
+  margin-bottom: 10px;
+}
+.pic-box .content .register .account-txt .btn {
+  position: absolute;
+  top: 290px;
+  left: 100px;
+}

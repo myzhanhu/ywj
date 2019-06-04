@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东旗下二手交易平台</title>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css/index.css">
+    <link type="text/css" rel="stylesheet" href="../css/register.css">
+    <link type="text/css" rel="stylesheet" href="../css/commodity.css">
+    <link type="text/css" rel="stylesheet" href="../font_t4hiixhwad/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="../css/Shopping-Cart.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="head">
+                <div class="head-logo">
+                    <a href="../html/index.html"> <img src="../img/paipai.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="cart-thead clearfix">
+            <div class="column ">
+                <input type="checkbox" id="quanxuan" class="all-election">
+                <label>全选</label>
+            </div>
+            <div class="sp">商品</div>
+            <div class="dj">单价</div>
+            <div class="sl">数量</div>
+            <div class="cz">操作</div>
+        </div>
+        <div class="ranks clearfix">
+
+
+        </div>
+        <div class="Settlement">
+            <span class="Settlement-js">去结算</span>
+            <span class="Settlement-zj"><i>总价：</i>¥<i id="zongjia"></i></span>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="img-box">
+                <img src="../img/bottom_slogan@2x.306d20c.png">
+            </div>
+        </div>
+        <div class="last">
+            <div class="paipai">
+                <a href="#">关于拍拍</a>
+                <a href="#">联系我们</a>
+            </div>
+            <div class="synopsis">
+                <a href="#">粤ICP备13011462号-2</a>
+                <span>客服电话：400-612-2333</span>
+                <span>Copyright©2017-2018 拍拍paipai.com版权所有</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../js/cookie.js"></script>
+<script src="../js/Shopping-Cart.js"></script>
+<script>
+    // $(function() {
+    //     var shop = cookie.get('shop');
+    //     if (shop) {
+    //         shop = JSON.parse(shop);
+    //         // console.log(shop.map(elm => elm.id).join())
+    //         var idList = shop.map(elm => elm.id).join();
+    //         // console.log(idList);
+    //         $.ajax({
+    //             type: "get",
+    //             url: "../lib/shop.php",
+    //             data: {
+    //                 "idList": idList
+    //             },
+    //             dataType: "json",
+    //             success: function(response) {
+
+    //                 // console.log(response);
+    //                 var template = "";
+    //                 response.forEach(function(elm) {
+    //                     // console.log(elm);
+    //                     var pic = JSON.parse(elm.pic);
+    //                     var arr = shop.filter((val, i) => {
+    //                         return val.id === elm.id;
+    //                     });
+    //                     template = `
+    //                                 <div class="dhz">
+    //                                 <div class="inp"><input type="checkbox" class="${elm.id}" id="p-${elm.id}"></div>
+    //                                 <div class="jd-img">
+    //                                     <span class="sp-img">
+    //                                 <a href="#">
+    //                                     <img src="${pic[0].one}">
+    //                                 </a>
+    //                             </span>
+    //                                 </div>
+    //                                 <div class="kk">
+    //                                     <div class="jd-con">
+    //                                         <span class="sp-name"><a href="#"><img src="../img/zhuanmai.png">${elm.title}</a></span>
+    //                                         <span class="p-introduce">
+    //                                         ${elm.details}</span>
+    //                                     </div>
+    //                                     <div class="jd-dj"><span class="jiage"><i>¥</i>${elm.price}</span></div>
+    //                                     <div class="jd-sl">
+    //                                         <input class="text" disabled placeholder="1">
+    //                                     </div>
+    //                                     <div class="sc">
+    //                                         <p id="${elm.id}">删除</p>
+    //                                     </div>
+    //                                 </div>
+    //                             </div>`;
+
+    //                     $('.ranks').append(template);
+    //                     $('#' + elm.id).on('click', function() {
+    //                         var id = elm.id;
+    //                         var b = JSON.parse(cookie.get('shop')).filter(function(elm, i) {
+    //                             return elm.id != id
+    //                         });
+    //                         var c = JSON.stringify(b);
+    //                         cookie.set("shop", c, 1);
+    //                         $(this)[0].parentNode.parentNode.parentNode.remove();
+    //                     });
+    //                     $("." + elm.id).on('change', function() {
+    //                         var zongjia = $('#zongjia').html();
+    //                         if ($("." + elm.id).prop("checked")) {
+    //                             zongjia = zongjia - 0 + arr[0].num * elm.price;
+    //                         } else {
+    //                             zongjia = zongjia - arr[0].num * elm.price;
+    //                         }
+    //                         $('#zongjia').html(zongjia);
+    //                     })
+    //                 });
+    //             }
+    //         });
+    //     }
+    // });
+</script>
+
+</html>
